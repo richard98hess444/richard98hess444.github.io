@@ -65,16 +65,19 @@
 
   <div class="contact">
     📧 <a href="mailto:richard98hess444@gmail.com">richard98hess444@gmail.com</a> | 
-    🔗 <a href="https://www.linkedin.com/in/lu-ching-wang" target="_blank">LinkedIn</a>
+    🔗 <a href="https://www.linkedin.com/in/lu-ching-wang" target="_blank">LinkedIn</a> |
+    🔗 <a href="https://richard98hess444.github.io/" target="_blank">Github.io</a>
   </div>
 
   <div class="section">
     <h2>About Me</h2>
-    <p>
-      I am an AI Robotics Engineer with research interests in quadruped robots, reinforcement learning,
-      visual servoing, and control theory. My goal is to advance robotic locomotion and navigation
-      in complex environments, bridging the gap between theory and real-world deployment.
+    <p style="text-align:justify;">
+      I am currently a robotics research engineer at the Inventec AI Center's robotics group, where we mainly focus on quadruped robots and reinforcement learning. 
+      I have completed my master's degree at National Taiwan University, Department of Electrical Engineering. 
+      My master's research focused on robotics and automation, specifically in visual servoing, manipulators and autonomous mobile robots. 
+      Recently, I'm working on the resrach of learning-based planning and sim-to-real deployment of reinforcement learning.
     </p>
+
   </div>
   
   <div class="section">
@@ -88,14 +91,40 @@
 
   <div class="section">
     <h2>Projects</h2>
-    <h3>Tomato Harvesting Robot</h3>
-    <p>
-      Developed a mobile robot for greenhouse tomato harvesting with a dual-camera image-based visual
-      servoing system. Improved harvesting speed and accuracy, results published in ICRA and AIM.
+
+    <h3>Feasibility-Guided Planning over Multi-Specialized Locomotion Policies</h3>
+    <ul>
+      <li>Convolution neural network (CNN) deployment on Feasibility-Net and reconstruction comparison with ground truth.</li>
+      <li>Out-of-distribution (OOD) analysis for heightmaps input and evaluation for Feasibility-Net performance.</li>
+      <li>Real world experiments – mapping, navigation and policy adaptation implementation.</li>
+    </ul>
+
+    <h3>Quadruped Robots SDK Development / Sim-to-Real Deployment</h3>
+    <ul>
+      <li>Building up quadruped robot interface for customized actuators and sensors through LCM communication.</li>
+      <li>Training locomotion policy from IsaacGym and IsaacLab. C++ deployment and parameters (action scales, motor gains) fine-tuning.</li>
+    </ul>
+
+    <h3>Quadruped Robot Challenges (QRC)</h3>
+    <ul>
+      <li>Navigation deployment from our research: Feasibility-Guided Planning over Multi-Specialized Locomotion Policies.</li>
+      <li>ROS2 integration on navigation, locomotion, manipulator teleoperation and image detection.</li>
+    </ul>
+    <p align="center">
+        <a href="https://youtu.be/7LVLM7izCEI">
+            <img src="https://img.youtube.com/vi/7LVLM7izCEI/mqdefault.jpg" alt="QRC" />
+        </a>
     </p>
+
+    <h3>Tomato Harvesting Robot</h3>
+    <ul>
+      <li>Self-built a tomato harvesting wheeled-mobile robot for greenhouse usage with 68.4% of harvesting success rate.</li>
+      <li>Proposed a novel dual-camera image-based visual servoing control algorithm to solve the dislocation problem.</li>
+      <li>Increased the harvesting speed from 21.2 to 6.26 seconds under 60kg payload.</li>
+    </ul>
     <p align="center">
         <a href="https://www.youtube.com/watch?v=sg5Gc-BE53Q">
-            <img src="https://img.youtube.com/vi/sg5Gc-BE53Q/0.jpg" alt="Tomato Harvesting Robot" />
+            <img src="https://img.youtube.com/vi/sg5Gc-BE53Q/mqdefault.jpg" alt="Tomato Harvesting Robot" />
         </a>
     </p>
 
