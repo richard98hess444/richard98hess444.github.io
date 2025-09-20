@@ -121,7 +121,26 @@
       opacity: 1;
       transform: translate(-50%, -50%) scale(1.1); /* hover grow */
     }
+
+    .project {
+      margin-bottom: 30px;
     }
+    .project-title {
+      margin-bottom: 10px; /* space between title and body */
+    }
+    .project-body {
+      display: grid;
+      grid-template-columns: 200px 1fr; /* video = 200px */
+      column-gap: 30px;  /* gap between video and text */
+      align-items: start; /* text aligns with top of thumbnail */
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+
   </style>
 </head>
 <body>
@@ -174,44 +193,64 @@
     </ul>
   </div>
 
-  <div class="section">
+  <div class="project">
     <h2>Projects</h2>
 
-    <h3>Feasibility-Guided Planning over Multi-Specialized Locomotion Policies</h3>
-    <ul>
-      <li>Convolution neural network (CNN) deployment on Feasibility-Net and reconstruction comparison with ground truth.</li>
-      <li>Out-of-distribution (OOD) analysis for heightmaps input and evaluation for Feasibility-Net performance.</li>
-      <li>Real world experiments – mapping, navigation and policy adaptation implementation.</li>
-    </ul>
+    <h3 class="project-title">Feasibility-Guided Planning over Multi-Specialized Locomotion Policies</h3>
+    <div class="project-body">
+      <!-- Left: Video -->
+      <img src="image/Gemini_Generated_Image_g8dkp7g8dkp7g8dk.png" alt="Feasibility-Net" class="project img"/>
+      
+      <!-- Right: Sentences -->
+      <div style="text-align:justify;">
+      Convolution neural network (CNN) deployment on Feasibility-Net and reconstruction comparison with ground truth.
+      Out-of-distribution (OOD) analysis for heightmaps input and evaluation for Feasibility-Net performance.
+      Real world experiments – mapping, navigation and policy adaptation implementation.
+      </div>
+    </div>
 
-    <h3>Quadruped Robots SDK Development / Sim-to-Real Deployment</h3>
-    <ul>
-      <li>Building up quadruped robot interface for customized actuators and sensors through LCM communication.</li>
-      <li>Training locomotion policy from IsaacGym and IsaacLab. C++ deployment and parameters (action scales, motor gains) fine-tuning.</li>
-    </ul>
+    <h3 class="project-title">Quadruped Robots SDK Development / Sim-to-Real Deployment</h3>
+    <div class="project-body">
+      <!-- Left: Video -->
+      <img src="image/Gemini_Generated_Image_g8dkp7g8dkp7g8dk.png" alt="Sim-to-Real" class="project img"/>
 
-    <h3>Quadruped Robot Challenges (QRC)</h3>
-    <ul>
-      <li>Navigation deployment from our research: Feasibility-Guided Planning over Multi-Specialized Locomotion Policies.</li>
-      <li>ROS2 integration on navigation, locomotion, manipulator teleoperation and image detection.</li>
-    </ul>
-    <p align="center">
-        <a href="https://youtu.be/7LVLM7izCEI" target="_blank" rel="noopener noreferrer" class="video-thumb">
-            <img src="https://img.youtube.com/vi/7LVLM7izCEI/mqdefault.jpg" alt="QRC" />
-        </a>
-    </p>
+      
+      <!-- Right: Sentences -->
+      <div style="text-align:justify;">
+        Building up quadruped robot interface for customized actuators and sensors through LCM communication.
+        Training locomotion policy from IsaacGym and IsaacLab. C++ deployment and parameters (action scales, motor gains) fine-tuning.
+      </div>
+    </div>
 
-    <h3>Tomato Harvesting Robot</h3>
-    <ul>
-      <li>Self-built a tomato harvesting wheeled-mobile robot for greenhouse usage with 68.4% of harvesting success rate.</li>
-      <li>Proposed a novel dual-camera image-based visual servoing control algorithm to solve the dislocation problem.</li>
-      <li>Increased the harvesting speed from 21.2 to 6.26 seconds under 60kg payload.</li>
-    </ul>
-    <p align="center">
-        <a href="https://www.youtube.com/watch?v=sg5Gc-BE53Q" target="_blank" rel="noopener noreferrer" class="video-thumb">
-            <img src="https://img.youtube.com/vi/sg5Gc-BE53Q/mqdefault.jpg" alt="Tomato Harvesting Robot" />
-        </a>
-    </p>
+    <h3 class="project-title">Quadruped Robot Challenges (QRC)</h3>
+    <div class="project-body">
+      <!-- Left: Video -->
+      <a href="https://youtu.be/7LVLM7izCEI" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/7LVLM7izCEI/mqdefault.jpg" alt="QRC" class="project img"/>
+      </a>
+      
+      <!-- Right: Sentences -->
+      <div style="text-align:justify;">
+          Navigation deployment from our research: Feasibility-Guided Planning over Multi-Specialized Locomotion Policies.
+          ROS2 integration on navigation, locomotion, manipulator teleoperation and image detection.
+      </div>
+    </div>
+
+    <h3 class="project-title">Tomato Harvesting Robot with Dual-Camera Image-Based Visual Servoing</h3>
+    <div class="project-body">
+      <!-- Left: Video -->
+      <a href="https://www.youtube.com/watch?v=sg5Gc-BE53Q" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/sg5Gc-BE53Q/mqdefault.jpg" alt="Tomato Harvesting Robot" class="project img"/>
+      </a>
+
+      <!-- Right: Text -->
+      <div style="text-align:justify;">
+        Self-built a tomato harvesting wheeled-mobile robot for greenhouse usage with 68.4% of harvesting success rate.
+        Proposed a novel dual-camera image-based visual servoing control algorithm to solve the dislocation problem.
+        Increased the harvesting speed from 21.2 to 6.26 seconds under 60kg payload.
+      </div>
+
+  </div>
 
   </div>
 
