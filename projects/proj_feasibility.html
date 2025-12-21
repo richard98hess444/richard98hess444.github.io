@@ -7,11 +7,11 @@
   <style>
     body {
       font-family: "Helvetica Neue", Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
       line-height: 1.6;
-      background-color: #ffffffcd;
+      background-color: #c2c2c2cd;
       color: #333;
     }
 
@@ -34,35 +34,60 @@
       text-decoration: underline;
     }
 
-    .video {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .video iframe {
-      width: 100%;
-      max-width: 720px;
-      aspect-ratio: 16 / 9;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
     .section {
       margin-bottom: 30px;
     }
 
-    /* .video-thumb {
-      position: middle;
-      display: inline-block;
-      cursor: pointer;
-    } */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;   /* widen page feel */
+      margin: 30px auto;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
 
-    .video-thumb img {
-      width: 80%;
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;   /* center content */
+      padding: 0 20px;  /* small side padding on mobile */
+    }
+
+    .content-image {
+      width: 100%;
       height: auto;
-      border-radius: 8px;
       display: block;
-      margin: 0 auto;
+      margin: 20px auto;
+      border-radius: 8px;   /* optional */
+    }
+
+    .text-normal {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .text-small {
+      font-size: 15px;
+    }
+
+    .text-large {
+      font-size: 20px;
+    }
+
+    .bibtex {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 14px;
+      overflow-x: auto;
     }
 
   </style>
@@ -80,11 +105,11 @@
     Feasibility-Guided Planning over Multi-Specialized Locomotion Policies
   </h1>
 
-  <h4 style="text-align:center;">
+  <p class="text-large" style="text-align:center;">
     ICRA 2026 (under review)
-  </h4>
+  </p>
 
-  <p style="text-align:center;"><em>
+  <p class="text-large" style="text-align:center;"><em>
     Lu-Ching Wang*, Ying-Sheng Luo*, 
     Guilherme Christmann*, Hanjaya Mandala*, 
     Wei-Chao Chen
@@ -92,14 +117,16 @@
     (* denotes equal contribution)
   </p>
 
-  <!-- Video -->
-  <a href="https://youtu.be/Mp1Ay-S3GUM"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="video-thumb">
-    <img src="https://img.youtube.com/vi/Mp1Ay-S3GUM/maxresdefault.jpg"
-         alt="Feasibility-Guided Planning">
-  </a>
+  <div class="video-container">
+    <iframe
+      referrerpolicy="strict-origin-when-cross-origin"
+      src="https://www.youtube.com/embed/Mp1Ay-S3GUM"
+      title="Feasibility-Guided Planning"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <div class="section">
     <h2>Abstract</h2>
