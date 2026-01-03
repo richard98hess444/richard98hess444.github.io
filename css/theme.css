@@ -1,0 +1,33 @@
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  font-family: "Georgia", serif;
+  color: #fff700;
+}
+
+body.dark-mode .contact a {
+  text-decoration: none;
+  color: #fff700;
+}
+
+body.dark-mode .header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+body.dark-mode .nav a {
+  color: #fff700;
+  /* yellow links */
+}
+
+body.dark-mode .nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

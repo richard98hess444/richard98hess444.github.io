@@ -1,0 +1,116 @@
+.header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000000ff;
+  margin-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #004080;
+}
+
+.pub-list,
+.awards,
+.experience {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li,
+.awards li,
+.experience li {
+  margin-bottom: 10px;
+}
+
+.education {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education li {
+  margin-bottom: 0px;
+}
+
+.video {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumb {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.video-thumb::after {
+  content: "▶";
+  font-size: 48px;
+  /* smaller so it matches thumbnail */
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.video-thumb:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+  /* hover grow */
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  /* space between title and body */
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  /* video = 200px */
+  column-gap: 30px;
+  /* gap between video and text */
+  align-items: start;
+  /* text aligns with top of thumbnail */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.project-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}

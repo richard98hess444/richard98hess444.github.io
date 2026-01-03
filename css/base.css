@@ -1,0 +1,40 @@
+/* ===== Layout ===== */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #ffffffcd;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Georgia", serif;
+  color: #004080;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+#mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #004080;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#mode-toggle:hover {
+  background: #0066cc;
+}
