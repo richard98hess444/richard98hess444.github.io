@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/project.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vision-Language Navigation (VLN) | Richard Wang</title>
+
+  <style>
+    /* css implementation */
+    .video-container-local {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      /* widen page feel */
+      margin: 30px auto;
+      /* padding-top: 56.25%; */
+      /* 16:9 aspect ratio */
+    }
+
+    .video-container-local video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+
+  <button id="mode-toggle">🌙 Dark Mode</button>
+  <script>
+    const toggleBtn = document.getElementById("mode-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      } else {
+        toggleBtn.textContent = "☀️ Light Mode";
+      }
+    });
+  </script>
+
+  <!-- Navigation -->
+  <div class="nav">
+    ⬅️ <a href="../index.html">Back to Home</a>
+  </div>
+
+
+  <h1 style="text-align:center;">
+    Vision-Language Navigation (VLN)
+  </h1>
+
+  <div class="video-container-local">
+    <video autoplay loop muted playsinline controls>
+      <source src="../videos/NaVILA_real_0.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="section">
+    <h2>🚩 Important</h2>
+    <p style="text-align:justify;">
+      This work, <b>NaVILA</b>, is proposed by Cheng et al. and presents a vision-language action (VLA) model for legged robot navigation.
+      Please refer to their <a href="https://navila-bot.github.io/" target="_blank">website</a> for more details.
+    </p>
+    <h2>Citation</h2>
+    <pre class="code-block"><code>@inproceedings{cheng2024navila,
+    title = {NaVILA: Legged Robot Vision-Language-Action Model for Navigation},
+    author = {Cheng, An-Chieh and Ji, Yandong and Yang, Zhaojing and Zou, Xueyan and Kautz, Jan and Biyik, Erdem and Yin,
+    Hongxu and Liu, Sifei and Wang, Xiaolong},
+    booktitle = {RSS},
+    year = {2025},}
+      </code></pre>
+
+    <h2>Introduction</h2>
+    <p style="text-align:justify;">
+      We demonstrate its deployment on a Unitree A1 quadruped performing indoor tasks.
+      The VLA model is executed on an RTX 5090 server, with communication handled via UDP.
+      A detailed setup guide is provided for RTX 50-series GPUs and newer Ubuntu environments.
+    </p>
+
+    <h2>Installation Guidance</h2>
+    Please follow <a href="../other/NaVILA_Installation.md" target="_blank">this</a> instruction (It's a markdown file).
+
+  </div>
+
+</body>
+
+</html>
+
