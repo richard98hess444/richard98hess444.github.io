@@ -114,6 +114,20 @@
 .project-title a:hover {
   text-decoration: underline;
 }
+
+.profile-body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  column-gap: 20px;
+  align-items: start;
+}
+
+.profile-photo img {
+  width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 /* ===============================
    Fixed Top Navigation Bar
 ================================= */
