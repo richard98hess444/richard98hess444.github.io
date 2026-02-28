@@ -14,8 +14,14 @@
   </style>
 </head>
 <body class="dark-mode">
-  
-  <button id="mode-toggle">🌙 Dark Mode</button>
+  <nav class="navbar">
+    <a href="#about">About Me</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#work">Work</a>
+    <a href="#awards">Awards</a>
+    <button id="mode-toggle">🌙 Dark Mode</button>
+  </nav>
   <script>
     const toggleBtn = document.getElementById("mode-toggle");
     toggleBtn.addEventListener("click", () => {
@@ -40,7 +46,7 @@
     📄 <a href="cv/LuChingWang_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
   </div>
 
-  <div class="section">
+  <div class="section" id="about">
     <h2>About Me</h2>
     <p style="text-align:justify;">
       I am currently a robotics research engineer at the Inventec AI Center's robotics group, where we mainly focus on quadruped robots and reinforcement learning research. 
@@ -56,7 +62,7 @@
     </ul>
   </div>
   
-  <div class="section">
+  <div class="section" id="publications">
     <h2>Publications</h2>
     <ul class="pub-list">
       <li style="text-align:justify;">[1] <b>Lu-Ching Wang*</b>, Ying-Sheng Luo*, Hanjaya Mandala*, Yu-Lun Chou*, Guilherme Christmann*, Yu-Chung Chen, Yung-Shun Chan, Chun-Yi Lee and Wei-Chao Chen, 
@@ -76,7 +82,7 @@
     </ul>
   </div>
 
-  <div class="project">
+  <div class="project" id="projects">
     <h2>Projects</h2>
 
     <h3 class="project-title">
@@ -85,7 +91,7 @@
     <div class="project-body">
       <!-- Left: Video -->
       <a href="projects/vln_navila.html" target="_blank" rel="noopener noreferrer" class="video-thumb">
-        <img src="image/vln_navila.png" alt="VLN_NaVILA" class="project img"/>
+        <img src="image/projects_navila/vln_navila.png" alt="VLN_NaVILA" class="project img"/>
       </a>
       
       <!-- Right: Sentences -->
@@ -119,7 +125,7 @@
     <h3 class="project-title">Quadruped Robots SDK Development / Sim-to-Real Deployment</h3>
     <div class="project-body">
       <!-- Left: Video -->
-      <img src="image/schematic.jpg" alt="Sim-to-Real" class="project img"/>
+      <img src="image/projects_quadruped_sdk/schematic.jpg" alt="Sim-to-Real" class="project img"/>
 
       
       <!-- Right: Sentences -->
@@ -163,7 +169,7 @@
 
   </div>
 
-  <div class="section">
+  <div class="section" id="work">
     <h2>Work Experience</h2>
     <ul class="experience">
       <li><b>Inventec Corporation</b> — Robotics Research Engineer, AI Center (Aug. 2024 &ndash; Present)</li>
@@ -173,7 +179,7 @@
   </div>
 
 
-  <div class="section">
+  <div class="section" id="awards">
     <h2>Awards & Competitions</h2>
     <ul class="awards">
       <li>🥇 2025 ICRA Quadruped Robot Challenge (QRC) &ndash; Participation Certificate, Autonomous</li>

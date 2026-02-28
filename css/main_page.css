@@ -114,3 +114,68 @@
 .project-title a:hover {
   text-decoration: underline;
 }
+/* ===============================
+   Fixed Top Navigation Bar
+================================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;                  /* smaller height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid #004080;
+
+  z-index: 9999;
+  font-size: 15px;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+  background: rgba(20, 20, 20, 0.85);
+  border-bottom: 2px solid #333;
+}
+
+/* Navbar Links */
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #0066cc;
+}
+
+/* Dark Mode Links */
+body.dark-mode .navbar a {
+  color: #eee;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #4da6ff;
+}
+
+/* Prevent content from hiding behind navbar */
+body {
+  padding-top: 70px;   /* slightly larger than navbar height */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix anchor scroll offset (so titles aren't hidden) */
+.section,
+.project {
+  scroll-margin-top: 80px;
+}
