@@ -193,3 +193,23 @@ html {
 .project {
   scroll-margin-top: 80px;
 }
+
+/* Dedicated link style for inline project references */
+.relative-link {
+  color: #1e5eff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.relative-link:hover {
+  color: #0047d6;
+  text-decoration: underline;
+}
+
+body.dark-mode .relative-link {
+  color: #00a6c8;
+}
+
+body.dark-mode .relative-link:hover {
+  color: #38c8e8;
+}
