@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/project.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quadruped Robots SDK Development | Richard Wang</title>
+
+  <style>
+    /* css implementation */
+  </style>
+</head>
+
+<body class="dark-mode">
+
+  <button id="mode-toggle">🌙 Dark Mode</button>
+  <script>
+    const toggleBtn = document.getElementById("mode-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      } else {
+        toggleBtn.textContent = "☀️ Light Mode";
+      }
+    });
+  </script>
+
+  <!-- Navigation -->
+  <div class="nav">
+    ⬅️ <a href="../index.html#projects">Back to Home</a>
+  </div>
+
+
+  <h1 style="text-align:center;">
+    Quadruped Robots SDK Development / Sim-to-Real Deployment
+  </h1>
+
+  <!-- <div class="section">
+    <h2>Abstract</h2>
+    <p style="text-align:justify;">
+      Automation application in crop harvesting has increased in the past decades. 
+      Various types of harvesting robots are emerging in both commercial and research areas. 
+      One of the main challenges is the precision alignment of the gripper and the target crop. 
+      An undesired dislocation can harm both the gripper and the crop, which is mainly caused by uncertainties from the sensors and the manipulator. 
+      To solve the problem, the dual-camera setup is designed and implemented on a self-built robot. 
+      The perception of the tomato is done by a fixed depth camera and a camera without depth on the gripper. 
+      The proposed dual-camera image-based visual servoing (IBVS) controller is designed to deal with the image feedback from both cameras and the proof of asymptotically convergence is provided. Furthermore, the cumulative error compensation reduces the time for the harvesting process. The experiments were conducted in the greenhouse and tested under various conditions. The time cost is formulated as a function and the success picking rate of tomatoes is 68.4%.
+    </p>
+  </div> -->
+
+  <div class="section">
+    <h2>System Architecture</h2>
+    <img src="../image/projects_quadruped_sdk/system.png" alt="system_diagram" class="content-image" />
+  </div>
+
+  <div class="section">
+    <h2>System Architecture</h2>
+    <iframe src="../docs/quadruped_sdk/system_architecture.pdf#view=FitH" width="100%" height="550"
+      style="border: 1px solid #444; border-radius: 8px;" title="Quadruped SDK PDF Viewer">
+    </iframe>
+    <p>
+      If the PDF does not load,
+      <a href="../docs/quadruped_sdk/system_architecture.pdf" target="_blank" rel="noopener">
+        open it in a new tab
+      </a>.
+    </p>
+  </div>
+
+
+
+</body>
+
+</html>
